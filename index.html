@@ -1,0 +1,295 @@
+<html>
+
+<head>
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="Nav.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Footer - Sagar Developer</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="dstyles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav">
+            <div class="logo">
+                <img src="./images/sun.png" width=130,height=130 class="brand-logo" alt="">
+                <h3>The<span> Author's </span>Library</h3>
+            </div>
+
+            <div class="nav-items">
+                <div class="search">
+                    <input type="text" class="search-box" placeholder="search by author,bookname">
+                    <button class="search-btn">search</button>
+                </div>
+                <i class="fas fa-search"></i>
+                <i class="far fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <a href="./Signup.html"><i class='fas fa-user-circle'></i></a>
+            </div>
+        </div>
+        <ul class="links-container">
+            <li class="link-item"><a href="#" class="link">Home</a></li>
+            <div class="dropdown">
+                <span class="dropbtn">Categories
+                    <i class="fa fa-caret-down"></i>
+                </span>
+                <div class="dropdown-content">
+                    <a href="C:\Users\HP\OneDrive\Desktop\The Author's Library\grid.html">NOVELS</a>
+                    <a href="#">C</a>
+                    <a href="#">C++</a>
+                    <a href="#">JAVA</a>
+                    <a href="#">DBMS</a>
+                    <a href="#"> WEB DEVELOPMENT</a>
+                    <a href="#"> DATA STRUCTURES</a>
+                    <a href="#">OPERATING SYSTEM</a>
+                    <a href="#">COMPUTER NETWORKS</a>
+                    <a href="#">QUANTITATIVE APTITUDE</a>
+                    <a href="#">NCERT BOOKS</a>
+                </div>
+            </div>
+            <li class="link-item"><a href="#" class="link">Study Material</a></li>
+            <li class="link-item"><a href="C:\Users\HP\OneDrive\Desktop\The Author's Library\oldb.html" class="link">Old Books</a></li>
+            <li class="link-item"><a href="#" class="link">More</a></li>
+        </ul>
+    </nav>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="./images/IMG5.jpeg" alt="IMG1" style="width:90%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="./images/IMG3.jpeg" alt="IMG2" style="width:90%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="./images/DIMG2.jpeg" alt="IMG3" style="width:90%">
+            <div class="text"></div>
+        </div>
+        <div class="mySlides fade">
+            <div class="numbertext">4/ 5</div>
+            <img src="./images/IMG4.jpeg" alt="IMG4" style="width:90%">
+            <div class="text"></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="./images/DIMG1.jpeg" alt="IMG5" style="width:90%">
+            <div class="text"></div>
+        </div>
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+
+        function addToCart(){
+            alert('Item added to cart succesfully')
+        }
+    </script>
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-plane"></i>
+            <div class="content">
+                <h3>Free Shipping</h3>
+                <p>order above ₹1000</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-lock"></i>
+            <div class="content">
+                <h3>Secure Payments</h3>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-redo-alt"></i>
+            <div class="content">
+                <h3>Easy Returns</h3>
+                <p>10 days return policy</p>
+            </div>
+        </div>
+        <div class="icons">
+            <i class="fas fa-headset"></i>
+            <div class="content">
+                <h3>24/7 support</h3>
+                <p>Call us Anytime</p>
+            </div>
+        </div>
+    </div>
+    <div class="newsletter">
+        <div class="newsletter-text">
+            <h2>Subscribe For Latest Updates</h2>
+            <input type="text" placeholder="enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <h1 class="ribbon">
+        <strong class="ribbon-content">Suggestions for you</strong>
+    </h1>
+    <div class="products">
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">22% off</span>
+                    <img src="./images/java 1.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Java</h2>
+                    <span class="price">₹506.00</span><span class="actual-price">₹645.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">5% off</span>
+                    <img src="./images/dbms4.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">DBMS</h2>
+                    <span class="price">₹380.00</span><span class="actual-price">₹400.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">10% off</span>
+                    <img src="./images/cn1.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Computer Network</h2>
+                    <span class="price">₹710.00</span><span class="actual-price">₹789.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="./images/webdev.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Web Development</h2>
+                    <span class="price">₹212.00</span><span class="actual-price">₹265.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">20% off</span>
+                    <img src="./images/OS.jpg" class="product-thumb" alt="">
+                    <button class="card-btn" onclick="addToCart()">Add to Cart</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Operating Systems</h2>
+                    <span class="price">₹260.00</span><span class="actual-price">₹325.00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="footer-distributed">
+
+        <div class="footer-left">
+            <h3>The<span>Author's</span>Library</h3>
+
+            <p class="footer-links">
+                <a href="#">Home</a>
+                |
+                <a href="#">Study Material</a>
+                |
+                <a href="#">Contact us</a>
+                |
+                <a href="#">Blogs</a>
+            </p>
+
+            <p class="footer-company-name">Copyright © 2021 <strong>The Author's Library</strong> All rights
+                reserved</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>Ghaziabad</span>
+                    Delhi</p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p><span>+91 8742919290</span>
+                    +91 8851617474</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:support@author'slibrary.com">support@author'slibrary.com</a></p>
+            </div>
+        </div>
+        <div class="footer-right">
+            <p class="footer-company-about">
+                <span>About us</span>
+                <strong>The Author's Library</strong> is an Education Website that aims to build an open Community
+                of Students where Students can buy books as well as focusing on Student's Learning.
+            </p>
+            <div class="footer-icons">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-youtube"></i></a>
+            </div>
+            <ul class="payment-container">
+                <div class="credit-cards" style="text-align: center; width: 100%">
+                    <img height="40" src="https://shoplineimg.com/assets/footer/card_visa.png" />
+                    <img height="40" src="https://shoplineimg.com/assets/footer/card_master.png" />
+                    <img height="40" src="https://shoplineimg.com/assets/footer/card_paypal.png" />
+                </div>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
